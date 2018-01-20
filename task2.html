@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+funcion add1() {
+	var value = document.getElementById("num").innerHTML;
+	var number = parseInt(value)
+	var newVal = number + 1;
+	document.getElementById("num").innerHTML = "test";
+}
+</script>
+</head>
+<body>
+<h1 id="number">10</h1>
+<button type="button" onclick="numAlert()">Number Alert</button>
+<br>
+<button type="button" onclick="add()">Add 1</button>
+<br>
+<button type="button" onclick="newPar()">Print Num</button>
+<br>
+<div id="nums">
+</div>
+<script>
+function numAlert() {
+        window.alert(document.getElementById("number").innerHTML);
+}
+</script>
+<script>
+function add() {
+	var text = document.getElementById("number").innerHTML;
+	var num = parseInt(text);
+	var newNum = num + 1;
+	document.getElementById("number").innerHTML = newNum;
+}
+</script>
+<script>
+function newPar() {
+	var body = document.getElementById("nums");
+	var par = document.createElement("p");
+	var text = document.createTextNode(document.getElementById("number").innerHTML);
+	par.appendChild(text);
+	body.appendChild(par);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}
+.header {
+	text-align: center;
+}
+.options {
+	width: 33%;
+	height: 100%;
+}
+.description {
+	width: 67%;
+	overflow-y: hidden;
+	padding: 15px;
+}
+.options {
+	float: left;
+	padding: 15px;
+}
+.content::after {
+	content: "";
+	display: table:
+}
+.list ul {
+	list-style-type: none:
+	margin: 0;
+	padding: 0;
+}
+.list button {
+	padding: 8px;
+	margin-bottom: 8px;
+}
+</style>
+</head>
+<body>
+<h1 class="header">HW02 Task Three</h1>
+<div class="content">
+	<div class="options list">
+		<ul>
+		<button type="button" onclick="lorem()">Lorem Ipsem</button>
+		<br>
+		<button type="button" onclick="bottles()">99 Bottles</button>
+		<br>
+		<button type="button" onclick="thing()">Last Thing</button>
+		</ul>
+	</div>
+	<div class="description">
+		<p>Choose an option on the left!</p>
+	</div>
+</div>
+<script>
+function lorem() {
+	document.getElementsByClassName("description")[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur lorem. Ultrices sagittis orci a scelerisque purus semper eget duis at. Laoreet non curabitur gravida arcu ac tortor dignissim. Bibendum neque egestas congue quisque egestas. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Vel orci porta non pulvinar neque laoreet suspendisse interdum. Amet est placerat in egestas erat imperdiet. Sit amet consectetur adipiscing elit ut aliquam purus sit amet. Imperdiet proin fermentum leo vel orci. Duis ut diam quam nulla porttitor massa. Massa id neque aliquam vestibulum morbi blandit cursus risus. Malesuada fames ac turpis egestas. Morbi non arcu risus quis varius quam. Nisi porta lorem mollis aliquam ut porttitor leo. Feugiat vivamus at augue eget arcu dictum varius duis at. Arcu risus quis varius quam. Vulputate ut pharetra sit amet aliquam id diam maecenas. Eget sit amet tellus cras adipiscing.<br>Tellus orci ac auctor augue mauris augue. Eu turpis egestas pretium aenean pharetra magna ac. Donec enim diam vulputate ut pharetra sit amet. Tempus iaculis urna id volutpat. Justo laoreet sit amet cursus sit amet. Quisque id diam vel quam elementum pulvinar. Venenatis urna cursus eget nunc scelerisque viverra mauris. Tellus mauris a diam maecenas. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. In ornare quam viverra orci sagittis eu volutpat odio. Tellus orci ac auctor augue mauris augue. Vel eros donec ac odio tempor orci dapibus ultrices. Imperdiet proin fermentum leo vel orci porta. Habitant morbi tristique senectus et netus.<br>Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Accumsan sit amet nulla facilisi morbi tempus iaculis urna. Lobortis mattis aliquam faucibus purus in massa tempor. Consectetur adipiscing elit ut aliquam purus sit amet. Sit amet justo donec enim diam vulputate ut pharetra. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Consectetur adipiscing elit duis tristique. Mauris cursus mattis molestie a iaculis. Neque egestas congue quisque egestas diam in arcu cursus euismod. Mi in nulla posuere sollicitudin aliquam ultrices. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Quam elementum pulvinar etiam non quam lacus.<br>Quis lectus nulla at volutpat. Diam maecenas sed enim ut sem viverra aliquet. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Id porta nibh venenatis cras. Arcu non odio euismod lacinia at quis. Venenatis a condimentum vitae sapien pellentesque. Id neque aliquam vestibulum morbi blandit cursus. Habitant morbi tristique senectus et netus et malesuada. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Scelerisque eu ultrices vitae auctor eu. Eu scelerisque felis imperdiet proin fermentum leo vel. Accumsan lacus vel facilisis volutpat est velit. Ultricies leo integer malesuada nunc vel risus. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Est pellentesque elit ullamcorper dignissim cras tincidunt. Condimentum lacinia quis vel eros. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Dignissim suspendisse in est ante. Nunc consequat interdum varius sit amet.";
+}
+</script> <!--99 Bottles credit: http://www.99-bottles-of-beer.net/lyrics.html    Lorem Ipsum Credit: https://loremipsumgenerator.com/generator/?n=4&t=p -->
+<script>
+function bottles() {
+        document.getElementsByClassName("description")[0].innerHTML = "99 bottles of beer on the wall, 99 bottles of beer.<br>Take one down and pass it around, 98 bottles of beer on the wall.<br>98 bottles of beer on the wall, 98 bottles of beer.<br>Take one down and pass it around, 97 bottles of beer on the wall.<br>97 bottles of beer on the wall, 97 bottles of beer.<br>Take one down and pass it around, 96 bottles of beer on the wall.<br>96 bottles of beer on the wall, 96 bottles of beer.<br>Take one down and pass it around, 95 bottles of beer on the wall.";
+}
+</script>
+<script>
+function thing() {
+        document.getElementsByClassName("description")[0].innerHTML = "this is the third thing";
+}
+</script>
+</body>
+</html>
